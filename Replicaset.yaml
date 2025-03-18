@@ -1,0 +1,33 @@
+apiVersion: apps/v1 
+kind: ReplicaSet 
+metadata: 
+   name: myreplica 
+   labels:
+      app: replicaset 
+      type: backend 
+spec: 
+   replicas: 5
+   selector: 
+      matchExpressions:
+         - key: app 
+           operator: In
+           values:
+              - frontend 
+         - key: apps
+           operator: In
+           values:
+              - frontend 
+         - key: type
+           operator: NotIn
+           values:
+              - backend 
+   template:
+      metadata:
+         labels:
+           app: frontend 
+      spec:
+        containers:
+           - name: myfrontend
+             image: nginx 
+           - name: myfe
+             image: httpd

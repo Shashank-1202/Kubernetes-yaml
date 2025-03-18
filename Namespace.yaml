@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+    name: mynamespace
+
+---
+
+apiVersion: v1 
+kind: Pod 
+metadata: 
+    name: mypod 
+     namespace: mynamespace
+    labels:
+       app: myapp
+       type: frontend
+spec:
+   containers:
+      - name: mynginx
+        image: nginx
+        ports:
+           - containerPort: 80
+      - name: mytomcat
+        image: tomcat
+        ports:
+           - containerPort: 8080
