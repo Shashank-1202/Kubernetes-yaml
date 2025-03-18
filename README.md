@@ -22,10 +22,6 @@ Contents:
 📌 - NameSpace - Logical sepration in the cluster
 
 
-
-
-
-
 ⚡ Usage: Clone this repository and apply the configurations using:
 
 ```
@@ -34,4 +30,4 @@ kubectl apply -f <filename>.yaml
 
 
 
-Note: This folder contains yaml manifest files of kubernetes, clone the file and chnage the file names as you have set in your files.
+*Note:* This folder contains yaml manifest files of kubernetes, clone the file and chnage the file names as you have set in your files.
