@@ -30,4 +30,4 @@ kubectl apply -f <filename>.yaml
 
 
 
-*Note:* This folder contains yaml manifest files of kubernetes, clone the file and chnage the file names as you have set in your files.
+*Note:* This folder contains yaml manifest files of kubernetes, clone the file and change the file names as you have set in your files.
