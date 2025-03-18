@@ -13,13 +13,15 @@ Contents:
 
 📌 - Deployments – Manages updates & rollbacks
 
-📌 Services – Exposes applications inside/outside the cluster
+📌 - Services – Exposes applications inside/outside the cluster
 
 📌 - ConfigMaps & Secrets – Stores configuration data securely
 
 📌 - PersistentVolumes & Claims – Manages storage resources
 
 📌 - NameSpace - Logical sepration in the cluster
+
+
 
 
 ⚡ Usage: Clone this repository and apply the configurations using:
